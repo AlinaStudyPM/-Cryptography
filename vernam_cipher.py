@@ -25,6 +25,7 @@ def main():
 
   ciphertext = encrypt(message, key)
   print(f"Encrypted test: {ciphertext}")
+  #print(f"Encrypted test: {ciphertext.decode('latin-1')}")
 
   decrypted_message = decrypt(ciphertext, key)
   print(f"Decrypted message: {decrypted_message.decode()}")
